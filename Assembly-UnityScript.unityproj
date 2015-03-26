@@ -46,19 +46,14 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\8-way-keyboard-controls-force.js" />
-     <Compile Include="Assets\CreateSpeech.js" />
-     <Compile Include="Assets\InstantiateBubble.js" />
-     <Compile Include="Assets\MoveWoman.js" />
-     <Compile Include="Assets\appear.js" />
-     <Compile Include="Assets\camera-follow.js" />
+     <Compile Include="Assets\BuyThisScreen\appear.js" />
+     <Compile Include="Assets\Camera\camera-follow.js" />
+     <Compile Include="Assets\CharacterPlayer\jump.js" />
+     <Compile Include="Assets\Platforms\platformsCollider.js" />
      <Compile Include="Assets\collideReveal.js" />
      <Compile Include="Assets\deleteUrself.js" />
-     <Compile Include="Assets\dragging.js" />
      <Compile Include="Assets\instantiate-mouse.js" />
-     <Compile Include="Assets\jump.js" />
      <Compile Include="Assets\nextScene.js" />
-     <Compile Include="Assets\platforms.js" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/4.6.0/UnityEngine.UI.dll</HintPath>
  </Reference>
