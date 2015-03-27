@@ -1,6 +1,9 @@
 ﻿#pragma strict
 
 var isgrounded : boolean = true;
+var anim : Animator;
+var jump : int = Animator.StringToHash("jump");
+
 function Awake () {
 		DontDestroyOnLoad (transform.gameObject);
 	}

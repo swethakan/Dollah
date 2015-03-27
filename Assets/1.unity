@@ -443,9 +443,9 @@ GameObject:
   m_Component:
   - 4: {fileID: 532744722}
   - 212: {fileID: 532744721}
-  m_Layer: 9
+  m_Layer: 12
   m_Name: grass
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -543,9 +543,9 @@ GameObject:
   m_Component:
   - 4: {fileID: 593266476}
   - 212: {fileID: 593266475}
-  m_Layer: 9
+  m_Layer: 12
   m_Name: grass
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -757,9 +757,9 @@ GameObject:
   m_Component:
   - 4: {fileID: 990739436}
   - 212: {fileID: 990739435}
-  m_Layer: 9
+  m_Layer: 12
   m_Name: grass
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -807,9 +807,9 @@ GameObject:
   m_Component:
   - 4: {fileID: 1254804996}
   - 212: {fileID: 1254804995}
-  m_Layer: 9
+  m_Layer: 12
   m_Name: grass
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -923,9 +923,9 @@ GameObject:
   m_Component:
   - 4: {fileID: 1318995951}
   - 212: {fileID: 1318995950}
-  m_Layer: 9
+  m_Layer: 12
   m_Name: grass
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1066,9 +1066,9 @@ GameObject:
   - 61: {fileID: 1369905269}
   - 50: {fileID: 1369905268}
   - 114: {fileID: 1369905267}
-  m_Layer: 1
+  m_Layer: 12
   m_Name: Floor
-  m_TagString: Floor
+  m_TagString: platform1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1140,7 +1140,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1369905266}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .300000012, y: -24, z: 0}
+  m_LocalPosition: {x: .300000012, y: -27.1000004, z: 0}
   m_LocalScale: {x: .0522217192, y: .0239326041, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1154,9 +1154,9 @@ GameObject:
   m_Component:
   - 4: {fileID: 1378658040}
   - 212: {fileID: 1378658039}
-  m_Layer: 9
+  m_Layer: 12
   m_Name: grass
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1256,9 +1256,9 @@ GameObject:
   - 212: {fileID: 1397126882}
   - 50: {fileID: 1397126881}
   - 61: {fileID: 1397126880}
-  m_Layer: 0
-  m_Name: Floor
-  m_TagString: Floor
+  m_Layer: 12
+  m_Name: ground
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1576,7 +1576,7 @@ GameObject:
   - 114: {fileID: 1837390755}
   m_Layer: 12
   m_Name: Floor
-  m_TagString: Floor
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1740,7 +1740,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2075107543}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 15.8100004, y: 3.43000007, z: 0}
+  m_LocalPosition: {x: 15.8000002, y: 1.79999995, z: 0}
   m_LocalScale: {x: 7.66124201, y: 7.66124582, z: 7.66124582}
   m_Children:
   - {fileID: 379512406}
@@ -1785,6 +1785,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   facingRight: 1
   jump: 0
+  isOnGround: 1
+  isJumping: 0
   moveForce: 365
   maxSpeed: 8
   jumpClips:
