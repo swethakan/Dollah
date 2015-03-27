@@ -7,6 +7,8 @@ public class PlayerControl : MonoBehaviour
 	public bool facingRight = true;			// For determining which way the player is currently facing.
 	[HideInInspector]
 	public bool jump = false;				// Condition for whether the player should jump.
+	public bool isOnGround = false;
+	public bool isJumping = false;
 
 
 	public float moveForce = 365f;			// Amount of force added to move the player left and right.
@@ -27,7 +29,7 @@ public class PlayerControl : MonoBehaviour
 	void Awake()
 	{
 		// Setting up references.
-		groundCheck = transform.Find("groundCheck");
+		//groundCheck = transform.Find("groundCheck");
 		anim = GetComponent<Animator>();
 	}
 
@@ -35,10 +37,10 @@ public class PlayerControl : MonoBehaviour
 	void Update()
 	{
 		// The player is grounded if a linecast to the groundcheck position hits anything on the ground layer.
-		grounded = Physics2D.Linecast(transform.position, groundCheck.position, 1 << LayerMask.NameToLayer("Ground"));  
+		//grounded = Physics2D.Linecast(transform.position, groundCheck.position, 1 << LayerMask.NameToLayer("Ground"));  
 
 		// If the jump button is pressed and the player is grounded then the player should jump.
-		if(Input.GetButtonDown("Jump") && grounded)
+		if(Input.GetButtonDown("Jump") && isOnGround == true)
 			jump = true;
 	}
 
@@ -73,6 +75,8 @@ public class PlayerControl : MonoBehaviour
 		// If the player should jump...
 		if(jump)
 		{
+			isOnGround= false;
+			isJumping = true;
 			// Set the Jump animator trigger parameter.
 			anim.SetTrigger("Jump");
 
@@ -87,7 +91,23 @@ public class PlayerControl : MonoBehaviour
 			jump = false;
 		}
 	}
-	
+
+	void OnCollisionEnter2D (Collision2D col)
+	{
+
+		if(col.gameObject.tag == "ground")
+		{
+			if(isJumping == true)
+			{
+				isOnGround = true;
+				isJumping = false;
+			}
+
+			isOnGround= true;
+		}
+	}
+
+
 	
 	void Flip ()
 	{
