@@ -162,8 +162,7 @@ public class PlayerControl : MonoBehaviour
 	// On collision, spawn dust clouds.
 	void OnTriggerEnter2D(Collider2D other)
 	{
-		Debug.Log("hello world~");
-		Instantiate(particleDust, transform.position, transform.rotation);
+		//Instantiate(particleDust, transform.position, transform.rotation);
 	}
 
 }

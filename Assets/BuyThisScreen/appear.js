@@ -18,8 +18,10 @@ if (Input.GetMouseButtonDown(0))
              Destroy(willDestroy);
              Destroy(willDestroy2);
              Destroy(me);
+             
+             // Subtract five dollars.
+             PayMoney();
              }
-
 }
 
 function OnTriggerEnter2D (other : Collider2D) {
@@ -31,3 +33,10 @@ function OnTriggerEnter2D (other : Collider2D) {
 	
 	
 	}
+	
+function PayMoney() {
+	var score = GameObject.Find("Score");
+	//var counter = score.GetComponent(typeof(ScoreCounter));
+	//counter.ResetScore();
+	
+}
