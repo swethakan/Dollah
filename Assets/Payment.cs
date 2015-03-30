@@ -17,6 +17,5 @@ public class Payment : MonoBehaviour {
 		GameObject go = GameObject.Find ("Score");
 		ScoreCounter sc = (ScoreCounter)go.GetComponent (typeof(ScoreCounter));
 		sc.ResetScore ();
-		print ("you paid~");
 	}
 }

@@ -18,7 +18,6 @@ public class ScoreCounter : MonoBehaviour {
 
 	public void ResetScore() {
 		score = 0;
-		print ("score reset!");
 		DisplayScore ();
 	}
 
