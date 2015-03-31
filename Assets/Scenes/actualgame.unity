@@ -1414,7 +1414,6 @@ GameObject:
   - 212: {fileID: 1397126882}
   - 50: {fileID: 1397126881}
   - 61: {fileID: 1397126880}
-  - 114: {fileID: 1397126884}
   m_Layer: 12
   m_Name: ground
   m_TagString: ground
@@ -1483,9 +1482,6 @@ Transform:
   - {fileID: 1329387114}
   m_Father: {fileID: 0}
   m_RootOrder: 3
-<<<<<<< HEAD
---- !u!114 &1397126884
-=======
 --- !u!1 &1518206683
 GameObject:
   m_ObjectHideFlags: 0
@@ -1505,19 +1501,10 @@ GameObject:
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!114 &1518206684
->>>>>>> origin/master
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-<<<<<<< HEAD
-  m_GameObject: {fileID: 1397126879}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 748ff3e4d71144b1ca9c759116517f80, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-=======
   m_GameObject: {fileID: 1518206683}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -1572,7 +1559,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 21
->>>>>>> origin/master
 --- !u!1 &1567169967
 GameObject:
   m_ObjectHideFlags: 0
